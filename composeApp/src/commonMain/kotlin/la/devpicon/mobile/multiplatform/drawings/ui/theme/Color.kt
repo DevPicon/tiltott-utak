@@ -1,4 +1,4 @@
-package la.devpicon.mobile.compose.multiplatform.samples.ui.theme
+package la.devpicon.mobile.multiplatform.drawings.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
