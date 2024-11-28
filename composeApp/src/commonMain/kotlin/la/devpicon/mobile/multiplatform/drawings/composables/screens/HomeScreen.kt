@@ -8,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import drawingproject.composeapp.generated.resources.*
 import drawingproject.composeapp.generated.resources.Res
 import drawingproject.composeapp.generated.resources.label_basic_sample
 import drawingproject.composeapp.generated.resources.label_possesion_doughnut_chart
@@ -22,6 +23,7 @@ fun HomeScreen(
     onNavigateToDoughnutChartScreen: () -> Unit,
     onNavigateToWorkoutPauseScreen: () -> Unit,
     onNavigateToBasicDrawingScreen: () -> Unit,
+    onNavigateToPixelArtScreen: () -> Unit,
 ) {
     Column(
         modifier = modifier.fillMaxSize(),
@@ -54,6 +56,13 @@ fun HomeScreen(
         }
 
         Button(
+            onClick = onNavigateToPixelArtScreen,
+            modifier = buttonModifier
+        ) {
+            Text(stringResource(Res.string.label_pixel_art))
+        }
+
+        Button(
             onClick = {},
             modifier = buttonModifier
         ) {
@@ -74,6 +83,7 @@ fun HomeScreenPreview() {
                 onNavigateToDoughnutChartScreen = {},
                 onNavigateToWorkoutPauseScreen = {},
                 onNavigateToBasicDrawingScreen = {},
+                onNavigateToPixelArtScreen = {}
             )
         }
     }

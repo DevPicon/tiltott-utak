@@ -56,7 +56,8 @@ fun DoughnutChart(
     }
 
     val initialAngle = 270f
-    val sweepAngleA: Float = TOTAL_ANGLE.times(percentageA.times(animationProgress.value)).times(-1) // Counter clockwise
+    val sweepAngleA: Float =
+        TOTAL_ANGLE.times(percentageA.times(animationProgress.value)).times(-1) // Counter clockwise
     val sweepAngleB: Float = TOTAL_ANGLE.times(percentageB.times(animationProgress.value)) // clockwise
 
     val percentageValueA = percentageA.times(100.times(animationProgress.value)).toInt()

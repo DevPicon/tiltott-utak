@@ -36,6 +36,7 @@ import la.devpicon.mobile.multiplatform.drawings.composables.WorkoutPauseTimer
 import la.devpicon.mobile.multiplatform.drawings.composables.screens.BasicDrawingScreen
 import la.devpicon.mobile.multiplatform.drawings.composables.screens.DoughnutChartScreen
 import la.devpicon.mobile.multiplatform.drawings.composables.screens.HomeScreen
+import la.devpicon.mobile.multiplatform.drawings.composables.screens.PixelArtScreen
 import la.devpicon.mobile.multiplatform.drawings.ui.theme.DrawingTheme
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
@@ -109,6 +110,9 @@ fun App(
                         },
                         onNavigateToWorkoutPauseScreen = {
                             navController.navigate(Screens.Workout.name)
+                        },
+                        onNavigateToPixelArtScreen = {
+                            navController.navigate(Screens.PixelArt.name)
                         }
                     )
                 }
@@ -120,6 +124,9 @@ fun App(
                 }
                 composable(route = Screens.Doughnut.name) {
                     DoughnutChartScreen()
+                }
+                composable(route = Screens.PixelArt.name) {
+                    PixelArtScreen()
                 }
             }
         }
