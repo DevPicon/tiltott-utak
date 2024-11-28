@@ -15,6 +15,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import drawingproject.composeapp.generated.resources.Res
 import drawingproject.composeapp.generated.resources.compose_multiplatform
+import la.devpicon.mobile.multiplatform.drawings.composables.DoughnutChart
 import la.devpicon.mobile.multiplatform.drawings.composables.WorkoutPauseTimer
 import la.devpicon.mobile.multiplatform.drawings.ui.theme.DrawingTheme
 import org.jetbrains.compose.resources.painterResource
@@ -32,6 +33,7 @@ fun App(
     ) {
         Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
             WorkoutPauseTimer()
+            DoughnutChart()
         }
     }
 }
