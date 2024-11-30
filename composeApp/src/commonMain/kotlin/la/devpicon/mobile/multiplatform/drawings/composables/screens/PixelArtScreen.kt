@@ -103,7 +103,7 @@ fun PixelArtScreen(modifier: Modifier = Modifier) {
                             gridColors[index] = selectedColor
                         }
                     }
-                } 
+                }
         ) {
             val cellSize = size.width / gridWidth
             calculatedCellSize = cellSize
@@ -129,9 +129,7 @@ fun PixelArtScreen(modifier: Modifier = Modifier) {
 }
 
 // Export logic
-fun exportPixelArt(gridColors: List<Color>, width: Int, height: Int) {
-    // Convert gridColors to a Bitmap and save to storage
-}
+expect fun exportPixelArt(gridColors: List<Color>, width: Int, height: Int)
 
 
 @Preview
